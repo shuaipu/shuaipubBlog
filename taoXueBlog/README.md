@@ -15,7 +15,7 @@
 * Bootstrap 前端框架
 * UEditor/Markdown编辑器
 * font-wesome 字体/图标
-* 共同进步..
+* 共同进步
 
 
 
