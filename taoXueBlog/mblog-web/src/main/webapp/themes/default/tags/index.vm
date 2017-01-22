@@ -10,7 +10,8 @@
 						#albShow(${row.post.album})
 					#else
 					<div class="txt">
-                        <img src="$base$!{row.imgUrl}"></img>
+                       #* <img src="$base$!{row.imgUrl}"></img>*#
+                           <div class="txt">$!{row.post.summary}</div>
 					</div>
 					#end
 					<span class="itag">${row.name}</span>
