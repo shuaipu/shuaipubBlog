@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-01-19 10:14:59
+Date: 2017-01-22 18:07:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,15 +30,13 @@ CREATE TABLE `mto_attachs` (
   `to_id` bigint(20) DEFAULT NULL,
   `width` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of mto_attachs
 -- ----------------------------
-INSERT INTO `mto_attachs` VALUES ('1', '0', '/store/orig/2017/0113/131053045fmr.png', '/store/thumbs/2017/0113/13105304xok8.png', '/store/screenshot/2017/0113/131053040t8f.png', '0', '0', '1', '0');
-INSERT INTO `mto_attachs` VALUES ('2', '0', '/store/orig/2017/0113/13105304uwve.png', '/store/thumbs/2017/0113/13105304f1l3.png', '/store/screenshot/2017/0113/13105304uxgz.png', '0', '0', '1', '0');
-INSERT INTO `mto_attachs` VALUES ('3', '0', '/store/orig/2017/0113/13110546tp21.jpg', '/store/thumbs/2017/0113/131105478li0.jpg', '/store/screenshot/2017/0113/13110548s9xv.jpg', '0', '0', '2', '0');
 INSERT INTO `mto_attachs` VALUES ('4', '0', 'https://r1.ykimg.com/0541040858774D3D6A0A4C04601A60F2', 'https://r1.ykimg.com/0541040858774D3D6A0A4C04601A60F2', 'https://r1.ykimg.com/0541040858774D3D6A0A4C04601A60F2', '0', '1', '3', '0');
+INSERT INTO `mto_attachs` VALUES ('5', '0', '/store/orig/2017/0122/22144941c9ac.png', '/store/thumbs/2017/0122/22144942zwwh.png', '/store/screenshot/2017/0122/22144942fjkv.png', '0', '0', '7', '0');
 
 -- ----------------------------
 -- Table structure for mto_auth_menu
@@ -181,17 +179,16 @@ CREATE TABLE `mto_feeds` (
   `post_id` bigint(20) DEFAULT NULL,
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of mto_feeds
 -- ----------------------------
-INSERT INTO `mto_feeds` VALUES ('1', '4', '2017-01-13 10:53:05', '4', '1', '1');
-INSERT INTO `mto_feeds` VALUES ('2', '4', '2017-01-13 11:05:49', '4', '2', '1');
 INSERT INTO `mto_feeds` VALUES ('3', '4', '2017-01-13 16:32:24', '4', '3', '1');
 INSERT INTO `mto_feeds` VALUES ('4', '4', '2017-01-16 11:16:50', '4', '4', '1');
 INSERT INTO `mto_feeds` VALUES ('5', '4', '2017-01-16 11:18:44', '4', '5', '1');
 INSERT INTO `mto_feeds` VALUES ('6', '4', '2017-01-16 12:53:16', '4', '6', '1');
+INSERT INTO `mto_feeds` VALUES ('7', '4', '2017-01-22 14:49:43', '4', '7', '1');
 
 -- ----------------------------
 -- Table structure for mto_follows
@@ -249,7 +246,7 @@ CREATE TABLE `mto_group` (
 -- ----------------------------
 -- Records of mto_group
 -- ----------------------------
-INSERT INTO `mto_group` VALUES ('1', 'blog', '文章', '写文章', 'fa fa-pencil-square', 'blog', '0');
+INSERT INTO `mto_group` VALUES ('1', 'blog', '博客', '写博客', 'fa fa-pencil-square', 'blog', '0');
 INSERT INTO `mto_group` VALUES ('2', 'image', '图片', '发图片', 'fa fa-camera', 'image', '0');
 INSERT INTO `mto_group` VALUES ('3', 'video', '视频', '搬视频', 'fa fa-toggle-right', 'video', '0');
 INSERT INTO `mto_group` VALUES ('4', 'ask', '问答', '提问题', 'fa fa-question-circle', 'ask', '0');
@@ -340,17 +337,16 @@ CREATE TABLE `mto_posts` (
   `title` varchar(64) DEFAULT NULL,
   `views` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of mto_posts
 -- ----------------------------
-INSERT INTO `mto_posts` VALUES ('1', '4', '0', '<p>发大水发啊阿萨德范德萨水电费啥的</p>', '2017-01-13 10:53:04', 'ueditor', '0', '0', '2', '2', '2', null, '0', '0', '发大水发啊阿萨德范德萨水电费啥的', '放大放大发大水', '范德萨发送的发送是', '1');
-INSERT INTO `mto_posts` VALUES ('2', '4', '0', '<p>范德萨发送</p>', '2017-01-13 11:05:49', 'ueditor', '0', '0', '2', '1', '3', null, '0', '0', '范德萨发送', '范德萨', 'javaxxx', '4');
-INSERT INTO `mto_posts` VALUES ('3', '4', '0', '<p>在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。</p>', '2017-01-13 16:32:23', 'ueditor', '0', '0', '3', '1', '4', null, '0', '0', '在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。', '', '守护丽人 23', '7');
+INSERT INTO `mto_posts` VALUES ('3', '4', '0', '<p>在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。</p>', '2017-01-13 16:32:23', 'ueditor', '0', '0', '3', '1', '4', null, '0', '0', '在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。', '', '守护丽人 23', '9');
 INSERT INTO `mto_posts` VALUES ('4', '4', '0', '<p>32323</p>', '2017-01-16 11:16:50', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '32323', '323', '3232', '0');
 INSERT INTO `mto_posts` VALUES ('5', '4', '1', '<p>范德萨发</p>', '2017-01-16 11:18:44', 'ueditor', '0', '0', '4', '0', '0', null, '0', '0', '范德萨发', '3', '范德萨3333333333333', '1');
-INSERT INTO `mto_posts` VALUES ('6', '4', '0', '<p><img src=\"/shuaipublogs/store/thumbs/2017/0116/16125308x7jh.png\" title=\"\" alt=\"\"/></p>', '2017-01-16 12:53:16', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '', '2121', '固定固定', '0');
+INSERT INTO `mto_posts` VALUES ('6', '4', '0', '<p><img src=\"/shuaipublogs/store/thumbs/2017/0116/16125308x7jh.png\" title=\"\" alt=\"\"/></p>', '2017-01-16 12:53:16', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '', '2121', '固定固定', '2');
+INSERT INTO `mto_posts` VALUES ('7', '4', '0', '<p>测试文章谢谢</p>', '2017-01-22 14:49:42', 'ueditor', '0', '0', '2', '1', '5', null, '0', '0', '测试文章谢谢', '', 'java', '0');
 
 -- ----------------------------
 -- Table structure for mto_posts_attribute
@@ -431,6 +427,23 @@ INSERT INTO `mto_role_menu` VALUES ('1', '30');
 INSERT INTO `mto_role_menu` VALUES ('1', '31');
 
 -- ----------------------------
+-- Table structure for mto_share
+-- ----------------------------
+DROP TABLE IF EXISTS `mto_share`;
+CREATE TABLE `mto_share` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) DEFAULT NULL,
+  `classtype` int(11) DEFAULT NULL,
+  `hrefurl` varchar(200) DEFAULT NULL,
+  `imgurl` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of mto_share
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for mto_tags
 -- ----------------------------
 DROP TABLE IF EXISTS `mto_tags`;
@@ -457,7 +470,7 @@ INSERT INTO `mto_tags` VALUES ('6', '技术问答', '1', '7', '0', '0', '0', '/s
 INSERT INTO `mto_tags` VALUES ('7', '实用工具分享', '1', '8', '0', '0', '0', '/store/find/tools.png');
 INSERT INTO `mto_tags` VALUES ('8', '323', '0', '2', '4', '1', '0', null);
 INSERT INTO `mto_tags` VALUES ('9', '3', '0', '1', '5', '1', '0', null);
-INSERT INTO `mto_tags` VALUES ('10', '2121', '0', '0', '6', '1', '0', null);
+INSERT INTO `mto_tags` VALUES ('10', '2121', '0', '1', '6', '1', '0', null);
 
 -- ----------------------------
 -- Table structure for mto_users
@@ -491,8 +504,8 @@ CREATE TABLE `mto_users` (
 -- ----------------------------
 -- Records of mto_users
 -- ----------------------------
-INSERT INTO `mto_users` VALUES ('1', '2015-08-06 17:52:41', 'admin@mtons.com', '2017-01-16 11:53:17', null, '3TGCQF25BLHU9R7IQUITN0FCC5', '0', 'admin', '小蒲', '/store/ava/000/00/00/01_100.jpg', '2015-07-26 11:08:36', '0', '1', '0', '1', '1', '0', '0', '0', '0', '');
-INSERT INTO `mto_users` VALUES ('4', '2017-01-12 17:51:49', '1426090908@qq.com', '2017-01-18 17:19:20', null, '3ABVSMMDKPGOAOMVG2P7HVGCJF', '0', 'shuaipu', '测试1', '/assets/images/ava/default.png', null, '0', null, '0', '0', '1', '0', '0', '0', '6', null);
+INSERT INTO `mto_users` VALUES ('1', '2015-08-06 17:52:41', 'admin@mtons.com', '2017-01-19 11:46:09', null, '3TGCQF25BLHU9R7IQUITN0FCC5', '0', 'admin', '小蒲', '/store/ava/000/00/00/01_100.jpg', '2015-07-26 11:08:36', '0', '1', '0', '1', '1', '0', '0', '0', '0', '');
+INSERT INTO `mto_users` VALUES ('4', '2017-01-12 17:51:49', '1426090908@qq.com', '2017-01-22 15:52:19', null, '3ABVSMMDKPGOAOMVG2P7HVGCJF', '0', 'shuaipu', '测试1', '/assets/images/ava/default.png', null, '0', null, '0', '0', '1', '0', '0', '0', '7', null);
 INSERT INTO `mto_users` VALUES ('5', '2017-01-12 17:55:10', '2672260633@qq.com', null, null, '3931MUEQD1939MQMLM4AISPVNE', '0', 'aaaaa', '测试2', '/assets/images/ava/default.png', null, '0', null, '0', '0', '0', '0', '0', '0', '0', null);
 
 -- ----------------------------
