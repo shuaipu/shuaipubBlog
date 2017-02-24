@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-01-22 18:07:19
+Date: 2017-02-24 11:25:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -241,7 +241,7 @@ CREATE TABLE `mto_group` (
   `template` varchar(16) DEFAULT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of mto_group
@@ -250,6 +250,7 @@ INSERT INTO `mto_group` VALUES ('1', 'blog', '博客', '写博客', 'fa fa-penci
 INSERT INTO `mto_group` VALUES ('2', 'image', '图片', '发图片', 'fa fa-camera', 'image', '0');
 INSERT INTO `mto_group` VALUES ('3', 'video', '视频', '搬视频', 'fa fa-toggle-right', 'video', '0');
 INSERT INTO `mto_group` VALUES ('4', 'ask', '问答', '提问题', 'fa fa-question-circle', 'ask', '0');
+INSERT INTO `mto_group` VALUES ('5', 'share', '分享', '分享工具', 'fa fa-pencil-square', 'share', '0');
 
 -- ----------------------------
 -- Table structure for mto_logs
@@ -345,7 +346,7 @@ CREATE TABLE `mto_posts` (
 INSERT INTO `mto_posts` VALUES ('3', '4', '0', '<p>在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。</p>', '2017-01-13 16:32:23', 'ueditor', '0', '0', '3', '1', '4', null, '0', '0', '在远得知琦琦破坏佳一创业后十分生气，为此他和琦琦提出分手。在远在云顶的权限被父亲取消，气愤的他要琦琦帮自己对付芷晴。佳一对做账之事一窍不通，陈母督促其学习基础会计，佳一无奈应允。石磊派人假扮AM集团的人与芷晴谈合作，芷晴被骗的人财两空，陈曦见状十分心疼芷晴。陈曦替芷晴买避孕药却被佳一发现，二人发生争执。芷晴当众指出在远陷害自己，随后她向志高提出辞职。', '', '守护丽人 23', '9');
 INSERT INTO `mto_posts` VALUES ('4', '4', '0', '<p>32323</p>', '2017-01-16 11:16:50', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '32323', '323', '3232', '0');
 INSERT INTO `mto_posts` VALUES ('5', '4', '1', '<p>范德萨发</p>', '2017-01-16 11:18:44', 'ueditor', '0', '0', '4', '0', '0', null, '0', '0', '范德萨发', '3', '范德萨3333333333333', '1');
-INSERT INTO `mto_posts` VALUES ('6', '4', '0', '<p><img src=\"/shuaipublogs/store/thumbs/2017/0116/16125308x7jh.png\" title=\"\" alt=\"\"/></p>', '2017-01-16 12:53:16', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '', '2121', '固定固定', '2');
+INSERT INTO `mto_posts` VALUES ('6', '4', '0', '<p><img src=\"/shuaipublogs/store/thumbs/2017/0116/16125308x7jh.png\" title=\"\" alt=\"\"/></p>', '2017-01-16 12:53:16', 'ueditor', '0', '0', '1', '0', '0', null, '0', '0', '', '2121', '固定固定', '5');
 INSERT INTO `mto_posts` VALUES ('7', '4', '0', '<p>测试文章谢谢</p>', '2017-01-22 14:49:42', 'ueditor', '0', '0', '2', '1', '5', null, '0', '0', '测试文章谢谢', '', 'java', '0');
 
 -- ----------------------------
@@ -504,8 +505,8 @@ CREATE TABLE `mto_users` (
 -- ----------------------------
 -- Records of mto_users
 -- ----------------------------
-INSERT INTO `mto_users` VALUES ('1', '2015-08-06 17:52:41', 'admin@mtons.com', '2017-01-19 11:46:09', null, '3TGCQF25BLHU9R7IQUITN0FCC5', '0', 'admin', '小蒲', '/store/ava/000/00/00/01_100.jpg', '2015-07-26 11:08:36', '0', '1', '0', '1', '1', '0', '0', '0', '0', '');
-INSERT INTO `mto_users` VALUES ('4', '2017-01-12 17:51:49', '1426090908@qq.com', '2017-01-22 15:52:19', null, '3ABVSMMDKPGOAOMVG2P7HVGCJF', '0', 'shuaipu', '测试1', '/assets/images/ava/default.png', null, '0', null, '0', '0', '1', '0', '0', '0', '7', null);
+INSERT INTO `mto_users` VALUES ('1', '2015-08-06 17:52:41', 'admin@mtons.com', '2017-02-24 10:25:11', null, '3TGCQF25BLHU9R7IQUITN0FCC5', '0', 'admin', '小蒲', '/store/ava/000/00/00/01_100.jpg', '2015-07-26 11:08:36', '0', '1', '0', '1', '1', '0', '0', '0', '0', '');
+INSERT INTO `mto_users` VALUES ('4', '2017-01-12 17:51:49', '1426090908@qq.com', '2017-02-24 10:41:25', null, '3ABVSMMDKPGOAOMVG2P7HVGCJF', '0', 'shuaipu', '测试1', '/assets/images/ava/default.png', null, '0', null, '0', '0', '1', '0', '0', '0', '7', null);
 INSERT INTO `mto_users` VALUES ('5', '2017-01-12 17:55:10', '2672260633@qq.com', null, null, '3931MUEQD1939MQMLM4AISPVNE', '0', 'aaaaa', '测试2', '/assets/images/ava/default.png', null, '0', null, '0', '0', '0', '0', '0', '0', '0', null);
 
 -- ----------------------------
@@ -570,5 +571,5 @@ CREATE TABLE `mto_verify` (
 -- ----------------------------
 INSERT INTO `mto_verify` VALUES ('1', '8987832226', '2017-01-12 17:37:28', '2017-01-12 18:07:28', '0', '1426090908@qq.com', null, '1', '2');
 INSERT INTO `mto_verify` VALUES ('2', '0416150431', '2017-01-12 17:43:09', '2017-01-12 18:13:09', '0', '2672260633@qq.com', null, '1', '3');
-INSERT INTO `mto_verify` VALUES ('3', '5635038759', '2017-01-12 17:51:49', '2017-01-12 18:21:49', '0', '1426090908@qq.com', null, '1', '4');
+INSERT INTO `mto_verify` VALUES ('3', '5993666033', '2017-02-24 09:53:27', '2017-02-24 10:23:27', '0', '1426090908@qq.com', null, '2', '4');
 INSERT INTO `mto_verify` VALUES ('4', '2676352890', '2017-01-12 17:55:10', '2017-01-12 18:25:10', '0', '2672260633@qq.com', null, '1', '5');
