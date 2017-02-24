@@ -11,6 +11,8 @@ package mblog.web.controller.desk.group;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -31,12 +33,15 @@ import mblog.web.controller.desk.Views;
  */
 @Controller
 public class GroupIndexController extends BaseController {
+
+	private Logger logger = LoggerFactory.getLogger(GroupIndexController.class);
 	@Autowired
 	private GroupService groupService;
 	
 	@RequestMapping("/g/{groupKey}")
 	public String root(@PathVariable String groupKey, ModelMap model,
 			HttpServletRequest request) {
+		logger.info("执行查询");
 		// init params
 		String order = ServletRequestUtils.getStringParameter(request, "ord", Consts.order.NEWEST);
 		Group group = groupService.getByKey(groupKey);
@@ -46,5 +51,4 @@ public class GroupIndexController extends BaseController {
 		model.put("ord", order);
 		return routeView(Views.ROUTE_POST_INDEX, group.getTemplate());
 	}
-	
 }
